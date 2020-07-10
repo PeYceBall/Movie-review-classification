@@ -6,7 +6,7 @@ import dropbox
 import gc
 
 # модель приходится скачивать динамически из-за ограничений heroku
-dbx = dropbox.Dropbox("NqD9Rbe_98AAAAAAAAAADBocoMCGD9Nk4L4OIKc4iywEvKDSspcGNGukFoYl1jUe")
+dbx = dropbox.Dropbox("<ACCESS_TOKEN>")
 model_path = 'classifier/model/bert2.pt'
 with open(model_path, "wb") as f:
     metadata, res = dbx.files_download(path="/bert2.pt")
