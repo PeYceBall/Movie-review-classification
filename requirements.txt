@@ -1,0 +1,6 @@
+transformers
+torch==1.5.1+cpu
+numpy
+gunicorn
+django-heroku
+dropbox
